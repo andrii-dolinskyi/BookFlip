@@ -1,9 +1,8 @@
 const express = require('express');
+
 const router = express.Router();
+const userController = require('../controllers/userController');
 
-// Example instruction: If someone asks for all users, tell them this
-router.get('/', (req, res) => {
-    res.json({ message: 'Here are all the users!' });
-});
-
+router.get('/', userController.getAllUsers);
+//Add other routes as needed.
 module.exports = router;

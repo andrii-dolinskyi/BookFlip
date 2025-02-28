@@ -1,5 +1,6 @@
+# Ignore node_modules and environment files
 node_modules/
-.env
-.DS_Store
-build/
-dist/
+server/node_modules/
+client/node_modules/
+server/.env
+client/.env
