@@ -1,0 +1,78 @@
+.login-page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #D3D3D3;
+}
+
+.lottie-container {
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    top: calc(50vh + 130px); /* Using viewport height units for reliability */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.login-form-container {
+    position: absolute;
+    top: calc(50% - 150px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 2;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form input {
+    margin: 10px 0;
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.new-user-form {
+    margin-top: 20px;
+}
+
+.new-user-form a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+.nuclear-warning {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}

@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
 const bookSchema = new mongoose.Schema({
-    author: { type: String, required: true, maxlength: 40 },
-    bookName: { type: String, required: true, maxlength: 40 },
+    author: { type: String, required: true, maxlength: 50 },
+    bookName: { type: String, required: true, maxlength: 50 },
     genre: { type: String, required: true},
     language: { type: String, required: true},
     numberOfPages: { type: Number, required: false },

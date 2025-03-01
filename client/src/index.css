@@ -1,3 +1,4 @@
+/* index.css (Modified body styles) */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -18,16 +19,17 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  /* display: flex;
+  place-items: center; */ /* Removed flexbox styles */
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
@@ -46,9 +48,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -56,13 +60,91 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+      color: #213547;
+      background-color: #ffffff;
   }
+
   a:hover {
-    color: #747bff;
+      color: #747bff;
   }
+
   button {
-    background-color: #f9f9f9;
+      background-color: #f9f9f9;
   }
+}
+
+/* LoginPage.css (No changes, but included for completeness) */
+.login-page {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.lottie-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* z-index: -1; */ /* Removed z-index: -1 */
+}
+
+.login-form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form input {
+  margin: 10px 0;
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.new-user-form {
+  margin-top: 20px;
+}
+
+.new-user-form a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.nuclear-warning {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
 }
